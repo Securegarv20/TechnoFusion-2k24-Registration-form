@@ -29,6 +29,15 @@
                 <div class="input_box">
                     <label for="college-id">Upload Your College/University ID Card:</label>
                     <input type="file" id="college-id" name="college_id" accept="image/*" required>
+
+                        <div class="instruction-box">
+                    <p><strong>Note:</strong></p>
+                    <ul>
+                        <li>The file size must not exceed 5MB, or your registration will not be successful.</li>
+                    </ul>
+                </div>
+
+
                 </div>
                 <button type="button" class="pay-button" onclick="showStep2()">Next</button>
             </div>
@@ -37,8 +46,8 @@
                 <button class="previous-button" onclick="showStep1()">
                     <box-icon name="arrow-back" color="white"></box-icon>
                 </button>
-                  <br> 
-                    
+                  <br>
+
                 <h2>Select Event</h2><br>
                 <div class="input_box">
                     <label>
@@ -51,7 +60,7 @@
                         <input type="radio" id="ctf" name="event" value="CTF" required> CTF
                     </label>
                     <label>
-                        <input type="radio" id="it-quiz" name="event" value="IT-Quiz" required> IT-QUIZ
+                        <input type="radio" id="it-quiz" name="event" value="IT-Quiz" required> Brain Buster
                     </label>
                     <label>
                         <input type="radio" id="web-wizards" name="event" value="Web-Wizards" required> Web Wizards
@@ -72,7 +81,7 @@
                         <input type="radio" id="meme-mania" name="event" value="Meme-Mania" required> Meme Mania
                     </label>
                     <label>
-                        <input type="radio" id="blazing-tongue" name="event" value="Blazing Tongue" required> Blazing Tongue
+                        <input type="radio" id="blazing-tongue" name="event" value="Blazing-Tongue" required> Blazing Tongue
                     </label>
                 </div>
                 <div class="input_box">
@@ -85,7 +94,19 @@
                 <button class="previous-button" onclick="showStep2()">
                     <box-icon name="arrow-back" color="white"></box-icon>
                 </button>
-                  <br>  
+                  <br>
+
+                <style>
+                    .instruction-box {
+                        color: #4CAF50; /* Green color for text */
+                        font-size: 16px;
+                        margin-bottom: 20px;
+                    }
+                    .instruction-box ul {
+                        list-style-type: disc;
+                        padding-left: 20px;
+                    }
+                </style>
                 <h2>Team Details</h2><br>
                 <div class="input_box double">
                     <div class="input_box-item">
@@ -109,13 +130,20 @@
                     <!-- Dynamic team member fields will be inserted here -->
                 </div>
                 <button type="button" class="pay-button" onclick="showStep4()">Next</button>
-            </div>
 
+                <div class="instruction-box">
+                    <p><strong>Note:</strong></p>
+                    <ul>
+                        <li>For team events, ensure the team leader's name and member 1's name are the same. Fill in the names of other team members as appropria>
+                        <li>For solo events, enter your name twice: once as the team leader and once as member 1.</li>
+                    </ul>
+                </div>
+        </div>
             <div id="step4" class="step hidden">
                 <button class="previous-button" onclick="showStep3()">
                     <box-icon name="arrow-back" color="white"></box-icon>
                 </button>
-                  <br>  
+                  <br>
                 <h2>Payment Details</h2><br>
                 <button type="button" class="pay-button" id="pay-btn">Show Payment QR</button>
                         <script>
@@ -131,9 +159,9 @@
                                 });
                             });
                         </script>
-                    
+
                 <div class="input_box">
-                    <label for="utr">UTR Number</label>
+                    <label for="utr">Transaction Number :</label>
                     <input type="text" id="utr" name="utr" placeholder="Enter your UTR number" required>
                 </div>
                 <div class="input_box">
@@ -141,7 +169,15 @@
                     <input type="file" id="payment-screenshot" name="payment_screenshot" accept="image/*" required>
                 </div>
                 <button type="submit" class="pay-button">Submit</button>
-                <pre>If Submit button is not working make sure you have filled all the details.</pre>
+
+                <div class="instruction-box">
+    <p><strong>Note:</strong></p>
+    <ul>
+        <li>If you are not redirected to the success page, please try registering again.</li>
+        <li>Ensure your file size is within 5MB, or the registration will not be successfull.</li>
+        <li>If the submit button is unresponsive, please verify that all required fields are completed.</li>
+    </ul>
+</div>
 
             </div>
         </form>
