@@ -2,6 +2,8 @@
 
 Welcome to the official registration page for **TechnoFusion 2k24**, an intercollegiate fest organized by the ACM Student Chapter of **JAIN (Deemed-to-be University)**. This page is designed to facilitate smooth and efficient participant registrations for the event, which took place on **29th and 30th August 2024**.
 
+![TechnoFusion 2k24 Logo](static/styles/event-logo.png)
+
 ## About the Project
 
 This project was developed to manage participant registrations for TechnoFusion 2k24. The front-end design and JavaScript functionalities were created by **Me - Garv Kamra**, and the backend, including server-side logic and database integration, was handled by **[Pratyush Kashyap](https://github.com/pratyushkashyyy)**.
@@ -21,20 +23,18 @@ This project was developed to manage participant registrations for TechnoFusion 
 
 ## Project Structure
 
-```📂 TechnoFusion-registration-form
-├── 📂 instance              # Flask instance folder for configuration
+```plaintext
+📂 TechnoFusion-registration-form
+├── 📂 instance              # Configuration files
 ├── 📂 node_modules          # Node.js dependencies
 ├── 📂 static                # Contains static files (CSS, JavaScript, Images)
-│   ├── 📂 css
-│   │   └── styles.css       # All stylesheets
-│   ├── 📂 js
-│   │   └── script.js        # JavaScript logic for form validation and countdown
-│   └── 📂 images
-│       └── logo.png         # Event logos and images
-├── 📂 templates             # Flask templates for rendering HTML
-├── 📂 uploads               # Directory for uploaded files (if any)
-├── 📄 main.py              # Main server file for handling requests and routes
+│   ├── 📂 styles
+│   │   ├── index.css        # Main CSS for the registration page
+│   │   ├── success.css       # CSS for success page
+│   │   └── event-logo.png    # Your event logo or image
+├── 📂 templates             # HTML templates for rendering
+├── 📂 uploads               # Directory for uploaded files
+├── 📄 main.py              # Main server file for handling requests
 ├── 📄 package-lock.json     # Node.js package lock file
 ├── 📄 package.json          # Node.js project file
 └── 📄 README.md             # Project documentation
-
